@@ -1,0 +1,66 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-template-columns:repeat(1,100%);
+    grid-template-rows: repeat(1,80px);
+
+}
+.parent_grid{
+    background-color: red;
+    display: grid;
+    grid-template-columns:10% 50% 10%;
+    grid-template-rows:repeat(1,80px);
+    column-gap: 15%;
+}
+.parent_grid .son1{
+    font-size: 4.2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*----------------------------------*/
+
+.parent_grid .son2{
+    display: grid;
+    grid-template-columns: 28% 28% 28% ;
+    grid-template-rows:80px;
+    column-gap: 15%;
+    text-align: center;
+    
+}
+.parent_grid .son2 div{
+    margin-top: 20px;
+    font-size: 3vw;
+    height: 40px;
+    background-color:yellow;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+}
+.parent_grid .son2 div:hover{
+    background-color: pink;
+ transition: 2s;
+ -webkit-transition: 2s;
+ -moz-transition: 2s;
+ -ms-transition: 2s;
+ -o-transition: 2s;
+}
+/*----------------------------------*/
+.parent_grid .son3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent_grid .son3 i{
+    font-size: 5.3vw;
+}
